@@ -1,0 +1,15 @@
+replicaCount: 1
+
+image:
+  repository: deekshithsn/offer
+  pullPolicy: IfNotPresent
+  
+service:
+  type: ClusterIP
+  port: 1001
+  targetport: 1001
+  name: offer
+
+
+container:
+  name: offer-ui

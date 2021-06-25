@@ -1,0 +1,14 @@
+replicaCount: 1
+
+image:
+  repository: deekshithsn/ui
+  pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+  name: ui
+  targetport: 8080
+
+container:
+  name:  "react-ui"
